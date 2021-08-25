@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: ranjit-registry
+
+server:
+  port: 8761
+
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
